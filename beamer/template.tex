@@ -1,0 +1,75 @@
+%& -shell-escape 
+% $Header: /cvsroot/latex-beamer/latex-beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 1.7 2007/01/28 20:48:23 tantau Exp $
+\documentclass[t]{beamer}
+\usepackage{tabularx}
+\usepackage{textcomp}
+%\documentclass[a4paper]{article}
+%\usepackage{beamerarticle}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]
+
+\mode<article>{\usepackage{fullpage}}
+\mode<presentation>
+{
+  \usetheme{Singapore}   
+  \useoutertheme{miniframes}
+  \usecolortheme{dolphin}
+  \usefonttheme{serif}
+}
+
+\setbeamertemplate{footline}
+{%
+\leavevmode%
+\hbox{%
+
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,right]{author
+in head/foot}%
+\usebeamerfont{title in head/foot}\insertshortauthor\hspace{.3cm}
+\end{beamercolorbox}%
+
+\begin{beamercolorbox}[wd=.44\paperwidth,ht=2.5ex,dp=1.125ex,left]{title
+in head/foot}%
+\usebeamerfont{author in head/foot}\hspace{.3cm}\insertshorttitle
+\end{beamercolorbox}%
+
+\begin{beamercolorbox}[wd=.06\paperwidth,ht=2.5ex,dp=1.125ex,center]{title
+in head/foot}%
+\usebeamerfont{author in
+head/foot}\insertframenumber/\inserttotalframenumber
+\end{beamercolorbox}%
+}%
+\vskip0pt%
+}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[round]{natbib}
+\usepackage[T1]{fontenc}
+\everymath{\displaystyle}
+\usepackage{relsize}
+\usepackage{tikz}
+\usepackage{microtype, booktabs,amssymb, relsize, bm, booktabs, amsmath, 
+calc, amsthm, marvosym}
+\setbeamertemplate{navigation symbols}{}  
+
+\title[Ex] % (optional, use only with long paper titles)
+{Example}
+
+\author{Author \inst{1}}
+
+\institute[] % (optional, but mostly needed)
+{  
+\inst{1} Institution\\
+}
+
+\date{Subtitle}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\input{"beamer/temp_content.tex"}
+
+\end{document}
