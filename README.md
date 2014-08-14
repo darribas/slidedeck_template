@@ -1,4 +1,4 @@
-# `slide_template`
+# `slidedeck_template`
 
 * [Dani Arribas-Bel](http://darribas.org)
 
